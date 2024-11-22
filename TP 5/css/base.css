@@ -45,6 +45,7 @@ nav div {
 
 nav div span {
   color: #d1d7e0;
+  font-size: 1.6rem;
 }
 
 nav button:focus {

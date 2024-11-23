@@ -18,10 +18,9 @@
       <a><span class="bi bi-cart-dash-fill me-4"></span></a>
     </div>
   </header>
-
   <nav class="navbar navbar-expand-lg p-0" id="nav">
     <div class="container-fluid p-0">
-      <button class="navbar-toggler border-0 ms-0" type="button" data-bs-toggle="collapse"
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
         data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"
         id="burgerButton" onclick="changex()">
         <span class="bi bi-list" id="burger"></span>
@@ -47,9 +46,10 @@
 
   <main>
     <section id="caroussel">
+      <h2 class="container mt-4">Recommandé<span class="bi bi-chevron-right"></span></h2>
       <div id="carousselRecommandes" class="carousel slide carousel-fade" data-bs-ride=""> <!--caroussel-->
         <div class="carousel-inner">
-          <div class="carousel-item container mt-3 active">
+          <div class="carousel-item container active">
             <div>
               <div class="card text-bg-dark">
                 <img src="img/OuterWilds.png" class="card-img" alt="Outer Wilds">
@@ -57,8 +57,12 @@
                   <div class="container mx-4 d-flex flex-row justify-content-start align-items-center" id="imageOverlay"
                     onclick=expand()>
                     <h3 class="d-none pb-2 px-5" id="titleOverlay">Outer Wilds</h3>
-                    <span class="d-none mb-2" id="carousselPrix">$35.99 - En Stock</span>
-                    <a class="d-none" id="purchaseButton" href="produits.html">Acheter maintenant</a>
+                    <span class="d-none mb-2" id="carousselPrix">$35.99 - <span class="text-success">En Stock</span></span>
+                    <div class="d-none" id="purchaseDiv">
+                      <a href="produits.html">Page du magasin</a>
+                      <a><span class="bi bi-cart-plus-fill p-0"></span></a>
+                      <a><span class="bi bi-heart-fill p-0"></span></a>
+                    </div>
                     <span class="my-1 d-inline-block" id="enSavoirPlus">En savoir plus</span>
                     <span class="bi bi-chevron-up ms-auto" id="arrow"></span>
                   </div>
@@ -74,14 +78,14 @@
             <img src="..." class="d-block w-100" alt="...">
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+        <button class="carousel-control-prev ms-2" id="controlPrev" type="button" data-bs-target="#carouselExampleAutoplaying"
           data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="bi bi-caret-left-fill" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+        <button class="carousel-control-next me-2" id="controlNext" type="button" data-bs-target="#carouselExampleAutoplaying"
           data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="bi bi-caret-right-fill" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
       </div>

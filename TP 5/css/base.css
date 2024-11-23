@@ -68,7 +68,8 @@ nav button:focus {
 }
 
 #burgerButton {
-  padding-right: auto;
+  padding-right: 90%;
+  padding-left: 0.3rem;
 }
 
 /* Caroussel */
@@ -110,5 +111,5 @@ nav button:focus {
 }
 
 .exand {
-  max-height: 7.5rem;
+  height: 17.5rem;
 }

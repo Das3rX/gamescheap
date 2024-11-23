@@ -1,0 +1,115 @@
+@font-face {
+  font-family: "Archivo Black";
+  src: url(polices/ArchivoBlack-Regular.ttf);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #2D283E;
+}
+
+
+/* Header */
+
+
+header {
+  color: #d1d7e0;
+  font-family: Archivo Black;
+}
+
+header h1 {
+  font-size: 2.3rem;
+  margin-top: 0.2rem
+}
+
+header a span {
+  font-size: 2rem;
+
+}
+
+
+/* Nav */
+
+
+nav {
+  background-color: #564f6f;
+}
+
+nav div {
+  background-color: #564f6f;
+  border-radius: 0.2rem;
+}
+
+nav div span {
+  color: #d1d7e0;
+  font-size: 1.6rem;
+}
+
+nav button:focus {
+  color: transparent;
+  outline: none;
+}
+
+
+.navLinks {
+  color: #d1d7e0;
+  padding-left: 1.2rem;
+
+}
+
+.navLinksActive {
+  color: #2D283E;
+  background-color: #d1d7e0;
+  padding-left: 1.2rem;
+  border-radius: 0.2rem;
+}
+
+#burgerButton {
+  padding-right: 90%;
+  padding-left: 0.3rem;
+}
+
+/* Caroussel */
+
+#imageOverlay{
+  border: 0.3rem solid #564f6f;
+  background-color: #2D283E;
+  border-radius: 0.4rem; 
+}
+
+#carousselRecommandes img{
+  border: 0.3rem solid #564f6f;
+}
+
+#caroussel h3 {
+  color: #d1d7e0; 
+  margin-top: 0.3rem;
+  border-bottom: 0.2rem solid #564f6f;
+}
+
+#caroussel span {
+  color: #d1d7e0; 
+
+}
+
+#purchaseButton {
+  border: 0;
+  border-radius: 0.3rem;
+  background-color: #d1d7e0;
+  color: #2D283E;
+  padding-left: 0.4rem;
+  padding-right: 0.4rem;
+  text-decoration: none;
+  justify-self: end;
+}
+
+#purchaseButton:active {
+  text-decoration: underline;
+}
+
+.exand {
+  height: 17.5rem;
+}

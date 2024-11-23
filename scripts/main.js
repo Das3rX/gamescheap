@@ -19,7 +19,7 @@ function expand() {
     let enSavoirPlus = document.getElementById("enSavoirPlus")
     let titleOverlay = document.getElementById("titleOverlay")
     let arrow = document.getElementById("arrow")
-    let purchaseButton = document.getElementById("purchaseButton")
+    let purchaseDiv = document.getElementById("purchaseDiv")
     let prix = document.getElementById("carousselPrix")
 
     if (divOverlay.classList.contains("expand")) {
@@ -29,7 +29,7 @@ function expand() {
         titleOverlay.classList.replace("d-inline-block", "d-none");
         arrow.classList.replace("bi-chevron-down", "bi-chevron-up");
         arrow.style.marginBottom = "0rem";
-        purchaseButton.classList.replace("d-inline-block", "d-none");
+        purchaseDiv.classList.replace("d-flex", "d-none");
         prix.classList.replace("d-inline-block", "d-none");
     } else {
         divOverlay.classList.add("expand");
@@ -38,7 +38,7 @@ function expand() {
         titleOverlay.classList.replace("d-none", "d-inline-block");
         arrow.classList.replace("bi-chevron-up", "bi-chevron-down");
         arrow.style.marginBottom = "0.2rem";
-        purchaseButton.classList.replace("d-none", "d-inline-block");
+        purchaseDiv.classList.replace("d-none", "d-flex");
         prix.classList.replace("d-none", "d-inline-block");
     }
 

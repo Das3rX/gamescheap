@@ -1,0 +1,524 @@
+@font-face {
+  font-family: "Archivo Black";
+  src: url(polices/ArchivoBlack-Regular.ttf);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1E1E2F;
+}
+
+
+/* Header */
+
+
+header {
+  color: #d1d7e0;
+  font-family: Archivo Black;
+}
+
+header h1 {
+  font-size: 2.3rem;
+  margin-bottom: 0.5rem;
+  margin-top: 0.3rem;
+}
+
+header img {
+  width: 3rem; 
+  height: 3rem;
+}
+
+header a {
+  margin-right: 1.5rem;
+}
+
+
+/* Nav */
+
+
+nav {
+  background-color: #564f6f;
+}
+
+nav div {
+  background-color: #564f6f;
+  border-radius: 0.2rem;
+}
+
+nav div span {
+  color: #d1d7e0;
+  font-size: 2rem;
+}
+
+nav button:focus {
+  color: transparent;
+  outline: none;
+}
+
+
+.navLinks {
+  color: #d1d7e0;
+  padding-left: 1.2rem;
+  background-color: #47415f;
+
+}
+
+.navLinksActive {
+  color: #2D283E;
+  background-color: #d1d7e0;
+  padding-left: 1.2rem;
+  border-radius: 0.2rem;
+}
+
+#burgerButton {
+  padding-right: 90%;
+  padding-left: 0.3rem;
+}
+
+/* Caroussel Recommande */
+
+#caroussel h2 {
+  color: #afb5be;
+  font-size: 1.2rem;
+}
+
+#caroussel h2 span {
+  font-size: 1rem;
+  margin-left: 0.2rem;
+}
+
+.imageOverlay {
+  border: 0.3rem solid #564f6f;
+  background-color: #2D283E;
+  border-radius: 0.4rem;
+}
+
+#carousselRecommandes img {
+  border: 0.3rem solid #564f6f;
+}
+
+#caroussel h3 {
+  color: #d1d7e0;
+  margin-top: 0.3rem;
+  border-bottom: 0.2rem solid #564f6f;
+}
+
+
+.purchaseDiv a {
+  border: 0;
+  border-radius: 0.3rem;
+  margin: auto 0.15rem;
+  padding: 0.15rem 0.4rem;
+  background-color: #d1d7e0;
+  color: #2D283E;
+  text-decoration: none;
+  justify-self: end;
+}
+
+.purchaseDiv a span {
+  color: #2D283E;
+}
+
+.purchaseButton:active {
+  text-decoration: underline;
+}
+
+.exand {
+  height: 17.5rem;
+}
+
+#controlPrev span {
+  font-size: 1.6rem;
+  color: #d1d7e0;
+  text-shadow: 0 0 0.9rem white;
+}
+
+#controlNext span {
+  font-size: 1.6rem;
+  color: #d1d7e0;
+  text-shadow: 0 0 0.9rem white;
+}
+
+
+
+/* Dernières Sorties & Promotions */
+
+.rabais {
+  text-decoration: line-through;
+  color: #979ca3
+}
+
+.pourcentageRabais {
+  background-color: #1E1E2F;
+  margin: auto 0.4rem;
+  padding: 0.2rem;
+  border-radius: 0.3rem;
+}
+
+.divContenu p {
+  font-size: 0.8rem;
+  margin-top: 0.3rem;
+}
+
+.divBoutonsAchatPasRabais {
+  margin-top: 2.4rem;
+}
+
+.divBoutonsAchatBo6 {
+  margin-top: 1.2rem;
+}
+
+.divBoutonsAchat a {
+  border: 0;
+  border-radius: 0.3rem;
+  padding: 0.15rem 0.4rem;
+  background-color: #d1d7e0;
+  color: #2D283E;
+  text-decoration: none;
+  margin-right: 0.1rem;
+}
+
+.divBoutonsAchat a span {
+  color: #2D283E;
+}
+
+
+/* Dernières Sorties */
+
+#dernieresSorties {
+  margin-bottom: 2rem;
+}
+
+#dernieresSorties h2 {
+  color: #afb5be;
+  font-size: 1.2rem;
+}
+
+#dernieresSorties h2 span {
+  font-size: 1rem;
+  margin-left: 0.2rem;
+}
+
+.dernieresSortiesDiv {
+  background-color: #564f6f;
+  border: 0.3rem solid #564f6f;
+  color: #d1d7e0
+}
+
+.dernieresSortiesDiv h5 {
+  border-bottom: 0.2rem solid #1E1E2F;
+  margin-bottom: 0.7rem;
+}
+
+#controlPrevDS{
+  margin-top: auto;
+  margin-bottom: auto;
+  height: 20%;
+}
+
+#controlNextDS {
+  margin-top: auto;
+  margin-bottom: auto;
+  height: 20%;
+}
+
+#controlPrevDS span {
+  font-size: 1.6rem;
+  color: #d1d7e0;
+  text-shadow: 0 0 0.9rem white;
+  margin-bottom: 1.1rem;
+}
+
+#controlNextDS span {
+  font-size: 1.6rem;
+  color: #d1d7e0;
+  text-shadow: 0 0 0.9rem white;
+  margin-bottom: 1.1rem;
+}
+
+/* Vendeurs fiables */
+
+#vendeursFiables {
+  box-shadow: 0 0 2rem rgb(107, 107, 107);
+}
+
+/* promotions */
+
+#promotions {
+  margin-top: 2rem;
+}
+
+#promotions h2 {
+  color: #afb5be;
+  font-size: 1.2rem;
+}
+
+#promotions h2 span {
+  font-size: 1rem;
+  margin-left: 0.2rem;
+}
+
+.promotionsDiv {
+  background-color: #564f6f;
+  border: 0.3rem solid #564f6f;
+  color: #d1d7e0
+}
+
+.promotionsDiv h5 {
+  border-bottom: 0.2rem solid #1E1E2F;
+  margin-bottom: 0.7rem;
+}
+
+#controlPrevPromotions {
+  margin-top: auto;
+  margin-bottom: auto;
+  height: 20%;
+}
+
+#controlNextPromotions {
+  margin-top: auto;
+  margin-bottom: auto;
+  height: 20%;
+}
+
+#controlPrevPromotions span {
+  font-size: 1.6rem;
+  color: #d1d7e0;
+  text-shadow: 0 0 0.9rem white;
+  margin-bottom: 1.1rem;
+}
+
+#controlNextPromotions span {
+  font-size: 1.6rem;
+  color: #d1d7e0;
+  text-shadow: 0 0 0.9rem white;
+  margin-bottom: 1.1rem;
+}
+
+.rdrFS {
+  font-size: 1.15rem;
+}
+
+.detroitFS {
+  font-size: 1.15rem;
+}
+
+
+/* Prochainement */
+
+#prochainement h2 {
+  color: #afb5be;
+  font-size: 1.2rem;
+}
+
+#prochainement h2 span {
+  font-size: 1rem;
+  margin-left: 0.2rem;
+}
+
+.divProchainement {
+  border: 0.3rem solid #564f6f;
+  background-color: #564f6f;
+  color: #d1d7e0
+}
+
+.divProchainement div {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+
+.divProchainement h3 {
+  font-size: 1.25rem;
+}
+
+.divProchainement p {
+  margin-bottom: 0.3rem;
+}
+
+#prochainement img {
+  border-radius: 0.3rem;
+}
+
+.divBoutonsAchatProchainement a {
+  border: 0;
+  border-radius: 0.3rem;
+  padding: 0.15rem 0.4rem;
+  background-color: #d1d7e0;
+  color: #2D283E;
+  text-decoration: none;
+  margin-right: 0.1rem;
+}
+
+.divBoutonsAchatProchainement a span {
+  color: #2D283E;
+}
+
+#controlPrevProchainement {
+  margin-top: auto;
+  margin-bottom: auto;
+  height: 40%;
+}
+
+#controlNextProchainement {
+  margin-top: auto;
+  margin-bottom: auto;
+  height: 40%;
+}
+
+
+#controlPrevProchainement span {
+  font-size: 1.6rem;
+  color: #d1d7e0;
+  text-shadow: 0 0 0.9rem white;
+  margin-bottom: 0.6rem;
+}
+
+#controlNextProchainement span {
+  font-size: 1.6rem;
+  color: #d1d7e0;
+  text-shadow: 0 0 0.9rem white;
+  margin-bottom: 0.6rem;
+}
+
+
+
+/* Parcourir */
+
+#parcourir div {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  padding-top: 1.3rem;
+  padding-bottom: 1.3rem;
+  background-color: #564f6f;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 0 2rem rgb(107, 107, 107);
+}
+
+#parcourir div a {
+  background-color: #1E1E2F; 
+  color: #d1d7e0;
+  padding: 0.6rem 0.8rem;
+  border-radius: 0.4rem;
+  
+}
+
+#parcourir div a span {
+  font-size: 1rem;
+  margin-left: 0.2rem;
+}
+
+
+/* Footer */
+
+footer {
+  margin-top: 1.2rem;
+  padding: 4rem;
+  background-color: #363636;
+}
+
+
+/* Recherche */
+
+#recherche {
+  margin-top: 1rem;
+}
+
+#recherche input {
+  background-color: #d1d7e0;
+}
+
+#recherche button {
+  background-color: #564f6f;
+  border-color: #564f6f;
+  padding: 0 0.6rem;
+}
+
+#recherche button:active {
+  background-color: #1E1E2F;
+}
+
+#recherche button span{
+  color:#d1d7e0;
+  font-size: 1.6rem;
+}
+
+/* Jeux */
+
+.divProduits {
+  margin-top: 1rem;
+  background-color: #564f6f;
+  border: 0;
+  color: #d1d7e0;
+  padding-left: 0;
+}
+
+.divProduits div {
+  padding: 0.3rem;
+}
+
+
+.divProduits h3 {
+  font-size: 0.8rem;
+  margin-bottom: 0.2rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.divProduits p {
+  margin-bottom: 0.1rem;
+  font-size: 0.6rem;
+}
+
+.divProduits img {
+  border-radius: 0.3rem;
+}
+
+.divProduits span {
+  margin-left: 0.2rem;
+  font-size: 0.6rem;
+}
+
+.prixOverlay {
+  margin-right: 0; 
+  margin-bottom: 15%;
+}
+
+.prixOverlay p {
+  font-size: 0.7rem;
+  margin-right: 0.2rem;
+  margin-bottom: 15%;
+  background-color:#564f6f;
+  padding: 0.1rem 0.2rem;
+  border-radius: 0.2rem;
+}
+
+.prixOverlayRabais {
+  margin-right: 0; 
+  margin-bottom: 15%;
+}
+
+.prixOverlayRabais p {
+  font-size: 0.7rem;
+  margin-right: 0.2rem;
+  margin-bottom: 15%;
+  background-color:#564f6f;
+  padding: 0.08rem 0rem 0.08rem 0.2rem;
+  border-radius: 0.2rem;
+}
+
+.pourcentageRabaisJeux {
+  padding: 0;
+}
+
+.pourcentageRabaisJeux span {
+  background-color: #1E1E2F;
+  margin: auto 0rem auto 0.2rem;
+  padding: 0.2rem;
+  border-radius: 0.2rem;
+}

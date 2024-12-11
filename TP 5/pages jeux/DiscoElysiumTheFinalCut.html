@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
+  <title>GamesCheap</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="../css/base.css">
+</head>
+
+<body onload="iconePanierPageJeux(), iconesSpanPanier()" onscroll="cacherh1()">
+  <header class="headerSticky">
+    <div class="d-flex flex-row align-items-center py-2">
+      <h1 class="me-auto ms-3" id="titreh1">GamesCheap</h1>
+      <a href="../panier.html"><img src="../img/cart-icons/1.svg" alt="panier" id="iconePanier"></a>
+    </div>
+  </header>
+  <nav class="navbar navbar-expand-lg p-0" id="nav">
+    <div class="container-fluid p-0">
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" id="burgerButton"
+        onclick="changex()">
+        <span class="bi bi-list" id="burger"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link navLinks" id="accueil" aria-current="page" href="../index.html">Accueil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link navLinks" href="../produits.html">Jeux</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link navLinks" href="../wishlist.html">Liste de souhaits</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link navLinks" href="../contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link navLinks" href="../aide.html">Aide</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link navLinks" href="../aPropos.html">À propos</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section id="grilleJeu">
+
+      <h1>Disco Elysium: The Final Cut</h1>
+
+      <div class="row row-cols-1 row-cols-lg-2 m-0">
+        <div class="col titreImage">
+          <img src="../img/Image Page Jeux/disco elysium.png">
+        </div>
+
+        <div class="col descriptionCourte">
+          <p>
+            <span class="fw-bold">Date de parution: </span>15 Octobre 2019<br>
+            <span class="fw-bold">Développement: </span>ZA/UM<br>
+            <span class="fw-bold">Édition: </span>ZA/UM
+          </p>
+          <p>
+            <span class="fw-bold">Évaluations:</span> <span class="positif">Très positives</span> (94,681)
+          </p>
+          <p>
+            Disco Elysium - The Final Cut est la version ultime du jeu de rôle révolutionnaire. Incarnez un enquêteur, au système de talents unique, et arpentez tout un pan urbain. Interrogez des personnages inoubliables, résolvez des crimes ou acceptez des pots-de-vin. Devenez un héros ou une véritable épave.
+          </p>
+        </div>
+        <div class="col acheterJeu p-3 mb-3">
+          <div class="d-flex justify-content-center align-items-center">
+            <div>
+              <p class="h3 d-block text-center mb-3">
+                Acheter Disco Elysium: The Final Cut
+              </p>
+              <div>
+                <div class="prixJeu text-center">
+                
+                  <span class="prixNormal">$45.49</span>
+
+                </div>
+                <div class="text-center mt-3" id="boutonsPanier">
+                  <a onclick="ajouterPanier(this,`Disco Elysium: The Final Cut`, `$45.49`, `img/discoElysium.png`)" id="Disco Elysium: The Final Cut">Ajouter au panier</a>
+                  <a onclick="ajouterWishlist(this,`Disco Elysium: The Final Cut`, `$45.49`, `img/discoElysium.png`)" id="w-Disco Elysium: The Final Cut"><span class="bi bi-heart-fill p-0"></span></a>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+    </section>
+
+
+  </main>
+  <footer class="mt-5">
+    <div class="d-flex flex-column align-items-center text-light">
+      <span class="bi bi-exclamation-diamond fs-1 text-warning"></span>
+      <p>
+        Droits d'auteur : Tout les images utilisées appartiennent à leurs auteurs respectives
+      </p>
+      <p>
+        Tout les descriptions sont les propriétées intellectuelles de Steam. Pages contact, à propos et aide rédigées par ChatGPT.
+      </p>
+      <p>
+        L'utilisation des images est purement produite dans un objectif pédagogique pour le cours d'Interfaces Web
+      </p>
+      <p>
+        Toute utilisation du contenu en dehors du cadre du cours est illégal
+      </p>
+      <p>
+        Sité crée par Jérôme Tanguay
+      </p>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+    <script src="../scripts/main.js"></script>
+</body>
+
+</html>

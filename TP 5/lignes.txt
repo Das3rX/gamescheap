@@ -1,2 +1,0 @@
-<a on onclick="ajouterPanier(this,`Black Myth Wukong`, `$49.99`, `img/Black_Myth_Wukong.jpg`)"><span class="bi bi-cart-plus-fill p-0"></span></a>
-<a onclick="ajouterWishlist(this,`Black Myth Wukong`, `$49.99`, `img/Black_Myth_Wukong.jpg`)"><span class="bi bi-heart-fill p-0"></span></a>
